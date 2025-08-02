@@ -1,0 +1,14 @@
+/*对整个页面、链接和按钮应用新的鼠标指针*/
+body,
+a,
+button,
+[onclick] {
+  cursor: url("chrome-extension://__MSG_@@extension_id__/images/cat-paw.png"),
+    auto;
+}
+/*当鼠标悬停在链接或可点击元素上时，也可以定义一个不同的样式，这里我们保持一致*/
+a:hover,
+button:hover {
+  cursor: url("chrome-extension://__MSG_@@extension_id__/images/cat-paw.png"),
+    auto;
+}

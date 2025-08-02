@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "猫爪指针",
+    "version": "1.0.0",
+    "description": "将你的鼠标指针变成可爱的猫爪。",
+    "icons": {
+        "48":"images/cat-paw.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/cat-paw.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
